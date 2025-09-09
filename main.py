@@ -23,7 +23,7 @@ project = ws.project(PROJECT_NAME)
 model = project.version(VERSION).model
 
 # --- Video ---
-cap = cv2.VideoCapture(VIDEO_SOURCE)
+cap = cv2.VideoCapture('Rock-Paper-Scissors-Jetson.gif')
 if not cap.isOpened():
     raise RuntimeError(f"Could not open VIDEO_SOURCE={VIDEO_SOURCE}")
 
